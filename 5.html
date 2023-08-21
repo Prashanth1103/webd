@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Car Example</title>
+  </head>
+  <body>
+    <p id="car-info"></p>
+    <script>
+      class Vehicle {
+        constructor(make, model) {
+          this.make = make;
+          this.model = model;
+        }
+      }
+
+      class Car extends Vehicle {
+        constructor(make, model, year) {
+          super(make, model);
+          this.year = year;
+        }
+      }
+
+      const myCar = new Car("Ford", "Mustang", 2022);
+      const carInfo = 'Make: '+myCar.make +' Model: '+myCar.model+' Year: '+myCar.year;
+      document.getElementById("car-info").innerHTML = carInfo;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Counter using javascript</title>
+</head>
+<body>
+<p id = "result1"></p>
+<p id = "result2"></p>
+<script src = "11.js"></script>
+<script>
+const mycounter = counter();
+mycounter.increment();
+mycounter.increment();
+document.getElementById("result1").textContent = "Counter = " + mycounter.getcount();
+mycounter.decrement();
+document.getElementById("result2").textContent = "Counter = " + mycounter.getcount();
+</script>
+</body>
+</html>
